@@ -2,12 +2,12 @@ package ec.edu.ups.poo;
 
 public class Main {
     public static void main(String[] args) {
-        // Crear calificaciones
+
         Calificacion c1 = new Calificacion("Programacion", 8.5);
         Calificacion c2 = new Calificacion("Electro", 6.2);
         Calificacion c3 = new Calificacion("Fisica", 9.0);
 
-        // Crear estudiantes y agregar calificaciones
+
         Estudiante est1 = new Estudiante("Valeria", "Gómez");
         est1.agregarCalificacion(c1);
         est1.agregarCalificacion(c2);
@@ -15,12 +15,12 @@ public class Main {
         Estudiante est2 = new Estudiante("Luis", "Ordoñez");
         est2.agregarCalificacion(c3);
 
-        // Crear curso y agregar estudiantes
+
         Curso curso = new Curso("c", "Tercero");
         curso.agregarEstudiante(est1);
         curso.agregarEstudiante(est2);
 
-        // Imprimir todo el contenido
+
         System.out.println("=== INFORMACIÓN DEL CURSO ===");
         System.out.println("Nivel: " + curso.getNivel());
         System.out.println("Paralelo: " + curso.getParalelo());
